@@ -51,7 +51,7 @@ class SlackBotServer::Bot
   # @param key [String] a key used to target messages to this bot from
   #    your application when using {RemoteControl}. If not provided,
   #    this defaults to the token.
-  def initialize(token: nil, key: nil)
+  def initialize(token:, key: nil)
     @token = token
     @key = key || @token
     @connected = false
